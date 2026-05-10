@@ -1,73 +1,73 @@
-# React + TypeScript + Vite
+# Muhammad Shahzaib Khan - AI Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, interactive professional portfolio showcasing expertise in **Generative AI, Agentic AI, and Machine Learning Infrastructure**. Built with a Nordic-inspired aesthetic, featuring high-fidelity animations and 3D interactive components.
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=react)
+![Tech Stack](https://img.shields.io/badge/Built%20With-React%20%2B%20Vite%20%2B%20Tailwind-blue?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Key Features
 
-## React Compiler
+- **Interactive 3D Background**: Custom-built Neural Network background using Three.js and React Three Fiber.
+- **Dynamic Projects Showcase**: Detailed grid of 10+ AI and Software projects, including a specialized 3D Dental STL processing system.
+- **AI Agent Expertise**: Highlighted sections for GenAI, Agentic systems, and AI Infrastructure.
+- **High-Fidelity Animations**: Seamless transitions and staggered entrance effects powered by Framer Motion.
+- **Infinite Tech Marquee**: A custom-coded, smooth scrolling tech stack banner featuring 25+ official technologies.
+- **Functional Contact System**: Integrated with FormSubmit for real-time lead generation directly to inbox.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18, TypeScript, Vite
+- **Animations**: Framer Motion, Lucide React
+- **3D Graphics**: Three.js, React Three Fiber (R3F)
+- **Styling**: Modern CSS3 (Glassmorphism, CSS Variables, Flex/Grid)
+- **Deployment**: Vercel / Netlify
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Highlights
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 3D Dental STL Processing System
+A fast, CPU-based 3D modeling system focused on computational geometry. Automatically generates Hybrid and iBar structures from dental STL files with real-time interactive adjustments.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Hand Gesture Rehabilitation
+Real-time tracking system for physical therapy, detecting precision gestures (grasp, pinch, stretch) to support patient recovery.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### AI Infrastructure & Agents
+Specialized expertise in building scalable AI systems, RAG-based document chatbots (LangChain), and agentic workflows.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📈 Professional Snapshot
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **AI Strategy Associate** @ Zas Financials Ltd (UK)
+- **NLP Intern** @ Elevvo Pathways
+- **B.S. Computer Science** (Specialized in AI) @ PMAS Arid University
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔧 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mshahzaib7/Portfolio.git
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🤝 Connect With Me
+
+- **LinkedIn**: [sib00](https://www.linkedin.com/in/sib00)
+- **GitHub**: [mshahzaib7](https://github.com/mshahzaib7)
+- **Medium**: [Articles & Insights](https://muhammadshahzaibkhan.medium.com/)
+- **Email**: muhammadshazebb@gmail.com
+
+---
+
+Developed with ❤️ by Muhammad Shahzaib Khan.
