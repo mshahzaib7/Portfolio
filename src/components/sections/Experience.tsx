@@ -84,17 +84,41 @@ export default function Experience() {
 
   const lineVariants = {
     hidden: { height: 0 },
-    visible: { height: '100%', transition: { duration: 2, ease: "easeInOut" } }
+    visible: { 
+      height: '100%', 
+      transition: { 
+        duration: 2, 
+        ease: "easeInOut" as const 
+      } 
+    }
   };
 
   const cardVariants = {
     hidden: { opacity: 0, x: -40, scale: 0.9 },
-    visible: { opacity: 1, x: 0, scale: 1, transition: { type: "spring", stiffness: 100, damping: 20 } }
+    visible: { 
+      opacity: 1, 
+      x: 0, 
+      scale: 1, 
+      transition: { 
+        type: "spring" as const, 
+        stiffness: 120, 
+        damping: 12 
+      } 
+    }
   };
 
   const dotVariants = {
     hidden: { scale: 0, opacity: 0, rotate: -180 },
-    visible: { scale: 1, opacity: 1, rotate: 0, transition: { type: "spring", stiffness: 200, damping: 15 } }
+    visible: { 
+      scale: 1, 
+      opacity: 1, 
+      rotate: 0, 
+      transition: { 
+        type: "spring" as const, 
+        stiffness: 120, 
+        damping: 12 
+      } 
+    }
   };
 
   return (

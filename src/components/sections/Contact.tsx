@@ -54,7 +54,10 @@ export default function Contact() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { 
+        duration: 0.6, 
+        ease: "easeOut" as const 
+      }
     }
   };
 
@@ -152,7 +155,12 @@ export default function Contact() {
                       <motion.div
                         initial={{ scale: 0 }}
                         animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 200, damping: 10, delay: 0.2 }}
+                        transition={{ 
+                          type: "spring" as const, 
+                          stiffness: 120, 
+                          damping: 12, 
+                          delay: 0.2 
+                        }}
                       >
                         <CheckCircle2 size={80} style={{ color: 'var(--accent-cyan)' }} />
                       </motion.div>

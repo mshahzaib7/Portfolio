@@ -71,7 +71,10 @@ export default function Projects() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+          transition={{ 
+            duration: 0.6, 
+            ease: "easeOut" as const 
+          }}
         >
           <h2 className="gradient-text">Featured Projects</h2>
           
@@ -83,7 +86,13 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.6, delay: idx * 0.1, type: "spring", stiffness: 100 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: idx * 0.1, 
+                  type: "spring" as const, 
+                  stiffness: 120, 
+                  damping: 12 
+                }}
                 whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(120, 194, 173, 0.15)', borderColor: 'rgba(120, 194, 173, 0.3)' }}
                 style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: 0, overflow: 'hidden' }}
               >
