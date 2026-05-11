@@ -5,61 +5,61 @@ const projects = [
     title: "Hand Gesture Rehabilitation System",
     description: "Tracks hand gestures in real time with precision to support physical therapy through interactive exercises. Detects grasp, pinch, stretch, and swipe gestures with adaptive levels.",
     tags: ["Computer Vision", "Real-time Tracking", "Interactive"],
-    image: "/hand gesture rehab.png"
+    image: `${import.meta.env.BASE_URL}hand-gesture-rehab.png`
   },
   {
     title: "Enhanced Brick Breaker (Face Control)",
     description: "Multi-level progression game with multiple power-ups, particle effects, and a separate camera thread for low latency face tracking controls.",
     tags: ["Python", "OpenCV", "Game Development"],
-    image: "/brick breaker.png"
+    image: `${import.meta.env.BASE_URL}brick-breaker.png`
   },
   {
     title: "Real Time Facial Recognition",
     description: "Developed a real time facial recognition system using Python and OpenCV. Implemented face detection, feature extraction, and recognition algorithms.",
     tags: ["OpenCV", "Feature Extraction", "Machine Learning"],
-    image: "/Real time facial.jpeg"
+    image: `${import.meta.env.BASE_URL}real-time-facial.jpeg`
   },
   {
     title: "RAG Document Chatbot",
     description: "Developed a Retrieval-Augmented Generation (RAG) chatbot using LangChain and LLMs to answer complex queries accurately based on custom document repositories.",
     tags: ["GenAI", "LangChain", "NLP"],
-    image: "/Rag Document Chatbot.png"
+    image: `${import.meta.env.BASE_URL}rag-document-chatbot.png`
   },
   {
     title: "COVID-19 Detection System",
     description: "Created a computer vision pipeline utilizing Convolutional Neural Networks (CNNs) to analyze chest X-rays for rapid and reliable COVID-19 screening.",
     tags: ["CNN", "Computer Vision", "Healthcare AI"],
-    image: "/🩺_COVID-19_Detection_System.jpeg"
+    image: `${import.meta.env.BASE_URL}covid19-detection.jpeg`
   },
   {
     title: "Smart City Big Data Analytics",
     description: "Built a comprehensive data analytics dashboard for smart city metrics, processing vast amounts of urban data to predict traffic and energy consumption.",
     tags: ["Big Data", "Data Visualization", "Predictive Modeling"],
-    image: "/Smart city big data analtics.png"
+    image: `${import.meta.env.BASE_URL}smart-city-analytics.png`
   },
   {
     title: "3D Dental STL Processing System",
     description: "Built a fast, CPU-based 3D modeling system for automated STL processing. Features real-time interactive controls to generate hybrid structures and iBars with precision cuts and automated gap generation.",
     tags: ["3D Modeling", "Computational Geometry", "CAD"],
-    image: "/dental.png"
+    image: `${import.meta.env.BASE_URL}dental.png`
   },
   {
     title: "Rule Based System For Examination",
     description: "Engineered a robust rule-based expert system for automated examination evaluation and dynamic grading, minimizing human error.",
     tags: ["Expert Systems", "Automation", "Python"],
-    image: "/Rule_Based_System_For_examinatin.jpeg"
+    image: `${import.meta.env.BASE_URL}rule-based-system.jpeg`
   },
   {
     title: "Cash And Carry Billing System",
     description: "Full-featured billing system in Java enabling item scanning, dynamic cart updates, tax/discount calculations, and automatic invoice generation.",
     tags: ["Java", "System Design", "Inventory Management"],
-    image: "/Cash_And_Carry_Billing_System.jpeg"
+    image: `${import.meta.env.BASE_URL}billing-system.jpeg`
   },
   {
     title: "Intelligent Python Chatbot",
     description: "Intelligent chatbot using Python for automated user interactions, implementing Natural Language Processing to understand and respond to user queries.",
     tags: ["NLP", "Python", "Conversational AI"],
-    image: "/Chatbot_Using_Python_Intelligent_chatbot.jpeg"
+    image: `${import.meta.env.BASE_URL}python-chatbot.jpeg`
   }
 ];
 

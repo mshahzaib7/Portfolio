@@ -48,7 +48,7 @@ export default function About() {
                 boxShadow: '0 0 30px rgba(0, 240, 255, 0.15)',
               }}>
                 <img 
-                  src="/profile.jpg" 
+                  src={`${import.meta.env.BASE_URL}profile.jpg`} 
                   alt="Muhammad Shahzaib Khan" 
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
