@@ -46,7 +46,7 @@ export default function Skills() {
         >
           <h2 className="gradient-text">Skills & Expertise</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+          <div className="skills-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
             {skills.map((skillGroup, idx) => (
               <motion.div 
                 key={idx}
@@ -91,7 +91,7 @@ export default function Skills() {
           </div>
 
           <h3 style={{ color: 'var(--text-main)', fontSize: '1.8rem', marginTop: '4rem', marginBottom: '2rem', textAlign: 'center' }}>Professional Skills</h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
+          <div className="prof-skills-container" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1rem' }}>
             {profSkills.map((skill, idx) => (
               <motion.div
                 key={idx}

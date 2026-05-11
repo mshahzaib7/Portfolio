@@ -221,3 +221,151 @@ a:hover {
   z-index: 1;
   pointer-events: none;
 }
+
+/* =====================
+   RESPONSIVE / MOBILE
+   ===================== */
+
+/* Tablets & below (768px) */
+@media (max-width: 768px) {
+  :root {
+    --h1-size: clamp(2rem, 10vw, 2.8rem);
+    --h2-size: clamp(1.6rem, 7vw, 2rem);
+    --h3-size: 1.1rem;
+    --body-size: 0.9rem;
+    --section-padding: clamp(2rem, 6vh, 4rem);
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  /* Hero section */
+  .hero-section {
+    min-height: 100svh !important;
+    padding-top: 90px !important;
+    align-items: flex-start !important;
+  }
+
+  /* Glass cards */
+  .glass-card {
+    padding: 1.4rem;
+    border-radius: 18px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  /* h2 headings */
+  h2 {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+
+  /* About grid — stack vertically */
+  .about-grid {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  /* Profile image: smaller on mobile */
+  .profile-image-wrapper {
+    max-width: 240px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Stats grid: 2 columns on mobile */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+    padding: 1.5rem !important;
+  }
+
+  /* Experience timeline */
+  .timeline-wrapper {
+    padding-left: 3rem !important;
+  }
+
+  /* Projects grid: single column */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Skills grid: single column */
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+  }
+
+  /* Contact section */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Contact heading */
+  .contact-heading {
+    font-size: 2rem !important;
+  }
+
+  /* Education grid: stack */
+  .education-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Hero buttons: stack on small */
+  .hero-buttons {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  /* Professional skills: smaller */
+  .prof-skills-container {
+    gap: 0.6rem !important;
+  }
+}
+
+/* Small phones (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .glass-card {
+    padding: 1.2rem;
+    border-radius: 16px;
+  }
+
+  /* Stats: single column on very small screens */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-buttons .btn {
+    width: auto;
+  }
+
+  /* Experience card */
+  .timeline-wrapper {
+    padding-left: 2.5rem !important;
+  }
+
+  /* Contact info email text size */
+  .contact-value {
+    font-size: 0.95rem !important;
+    word-break: break-all;
+  }
+}

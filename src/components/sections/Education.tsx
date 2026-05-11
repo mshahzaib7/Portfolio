@@ -57,7 +57,7 @@ export default function Education() {
         >
           <h2 className="gradient-text">Education & Certifications</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginTop: '4rem' }}>
+          <div className="education-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '3rem', marginTop: '4rem' }}>
             
             {/* Education Column */}
             <motion.div variants={containerVariants}>

@@ -131,7 +131,7 @@ export default function Experience() {
           variants={containerVariants}
         >
           <h2 className="gradient-text">Work Experience</h2>
-             <div style={{ position: 'relative', marginTop: '3rem', paddingLeft: '0.5rem' }}>
+             <div className="timeline-wrapper" style={{ position: 'relative', marginTop: '3rem', paddingLeft: '0.5rem' }}>
             
             {/* Animated Main Timeline Line */}
             <motion.div 

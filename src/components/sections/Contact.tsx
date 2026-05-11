@@ -71,7 +71,7 @@ export default function Contact() {
           variants={containerVariants}
         >
           <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-            <motion.h2 variants={itemVariants} className="gradient-text" style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Get In Touch</motion.h2>
+            <motion.h2 variants={itemVariants} className="gradient-text contact-heading" style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Get In Touch</motion.h2>
             <motion.p variants={itemVariants} style={{ color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem', lineHeight: '1.8' }}>
               Have a project in mind or just want to chat? I'm always open to discussing new opportunities and creative AI solutions.
             </motion.p>
@@ -116,7 +116,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 style={{ color: 'var(--text-muted)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '0.3rem' }}>{item.label}</h4>
-                    <p style={{ color: 'var(--text-main)', fontSize: '1.1rem', fontWeight: 500 }}>{item.value}</p>
+                    <p className="contact-value" style={{ color: 'var(--text-main)', fontSize: '1.1rem', fontWeight: 500 }}>{item.value}</p>
                   </div>
                 </motion.a>
               ))}

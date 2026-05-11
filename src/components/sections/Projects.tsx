@@ -78,7 +78,7 @@ export default function Projects() {
         >
           <h2 className="gradient-text">Featured Projects</h2>
           
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '2.5rem', marginTop: '3rem' }}>
+          <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '2.5rem', marginTop: '3rem' }}>
             {projects.map((project, idx) => (
               <motion.div 
                 key={idx}

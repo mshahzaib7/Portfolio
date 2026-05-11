@@ -69,7 +69,7 @@ export default function Hero() {
             I aspire to create innovative AI solutions that inspire and transform the future. Specialized in Natural Language Processing, Computer Vision, and intelligent agentic systems.
           </motion.p>
           
-          <motion.div variants={itemVariants} style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+          <motion.div variants={itemVariants} className="hero-buttons" style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
             <a href="#contact" className="btn btn-primary">
               Let's Talk <ArrowRight size={20} />
             </a>

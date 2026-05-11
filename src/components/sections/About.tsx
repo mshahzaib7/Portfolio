@@ -27,7 +27,7 @@ export default function About() {
         >
           <h2 className="gradient-text">About Me</h2>
           
-          <div className="glass-card" style={{ marginTop: '2rem', display: 'flex', gap: '3rem', flexWrap: 'wrap', alignItems: 'center' }}>
+          <div className="glass-card about-grid" style={{ marginTop: '2rem', display: 'flex', gap: '3rem', flexWrap: 'wrap', alignItems: 'center' }}>
             
             {/* Profile Image Section */}
             <motion.div 
@@ -37,7 +37,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div style={{
+              <div className="profile-image-wrapper" style={{
                 position: 'relative',
                 width: '100%',
                 maxWidth: '350px',
@@ -96,7 +96,7 @@ export default function About() {
           </div>
 
           {/* Full-width Statistics Grid */}
-          <div className="glass-card" style={{ marginTop: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', padding: '2rem' }}>
+          <div className="glass-card stats-grid" style={{ marginTop: '2rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', padding: '2rem' }}>
             <div style={{ textAlign: 'center' }}>
               <h3 style={{ fontSize: '2.5rem', color: 'var(--accent-cyan)', marginBottom: '0.3rem', fontFamily: 'var(--font-mono)', textShadow: '0 0 20px rgba(120, 194, 173, 0.4)' }}>20+</h3>
               <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1.5px', fontWeight: 500 }}>Projects Completed</p>
