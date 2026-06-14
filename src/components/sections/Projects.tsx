@@ -14,6 +14,18 @@ const projects = [
     image: `${import.meta.env.BASE_URL}brick-breaker.png`
   },
   {
+    title: "ClearSlot NHS AI Appointment Platform",
+    description: "AI powered NHS outpatient intelligence platform that predicts DNA (Did Not Attend) risk using XGBoost ML, automates smart backfill with reserve list management, and delivered a 30% DNA reduction saving £27.5M annually per Trust.",
+    tags: ["Machine Learning", "XGBoost", "FHIR API", "NHS", "HealthTech"],
+    image: `${import.meta.env.BASE_URL}NHS.png`
+  },
+  {
+    title: "Rippled Reef Operating System",
+    description: "Professional grade aquarium OS for reef enthusiasts. Track, analyze, and perfect your aquatic ecosystem with precision parameter monitoring, intelligent alerts, and a clean real-time dashboard built for serious reef keepers.",
+    tags: ["React", "IoT", "Real-time Dashboard", "Aquarium Tech"],
+    image: `${import.meta.env.BASE_URL}rippled.png`
+  },
+  {
     title: "Real Time Facial Recognition",
     description: "Developed a real time facial recognition system using Python and OpenCV. Implemented face detection, feature extraction, and recognition algorithms.",
     tags: ["OpenCV", "Feature Extraction", "Machine Learning"],
@@ -39,19 +51,19 @@ const projects = [
   },
   {
     title: "3D Dental STL Processing System",
-    description: "Built a fast, CPU-based 3D modeling system for automated STL processing. Features real-time interactive controls to generate hybrid structures and iBars with precision cuts and automated gap generation.",
+    description: "Built a fast, CPU based 3D modeling system for automated STL processing. Features real time interactive controls to generate hybrid structures and iBars with precision cuts and automated gap generation.",
     tags: ["3D Modeling", "Computational Geometry", "CAD"],
     image: `${import.meta.env.BASE_URL}dental.png`
   },
   {
     title: "Rule Based System For Examination",
-    description: "Engineered a robust rule-based expert system for automated examination evaluation and dynamic grading, minimizing human error.",
+    description: "Engineered a robust rule based expert system for automated examination evaluation and dynamic grading, minimizing human error.",
     tags: ["Expert Systems", "Automation", "Python"],
     image: `${import.meta.env.BASE_URL}rule-based-system.jpeg`
   },
   {
     title: "Cash And Carry Billing System",
-    description: "Full-featured billing system in Java enabling item scanning, dynamic cart updates, tax/discount calculations, and automatic invoice generation.",
+    description: "Full featured billing system in Java enabling item scanning, dynamic cart updates, tax/discount calculations, and automatic invoice generation.",
     tags: ["Java", "System Design", "Inventory Management"],
     image: `${import.meta.env.BASE_URL}billing-system.jpeg`
   },
