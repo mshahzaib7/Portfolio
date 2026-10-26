@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react';
+import { GraduationCap, Award, Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 const educationData = [
   {
@@ -18,7 +18,9 @@ const educationData = [
   }
 ];
 
-const certificationsData = [
+const certificationsData: { title: string; issuer: string; date?: string; link?: string }[] = [
+  { title: "Google AI Essentials (5-course specialization)", issuer: "Google via Coursera", date: "01/2026", link: "https://coursera.org/verify/specialization/6QPVDRIOFNQ4" },
+  { title: "Anthropic Academy (9 courses)", issuer: "Anthropic · Claude Code 101, Claude Platform 101, Claude 101, AI Fluency series" },
   { title: "Natural Language Processing Intern", issuer: "Eleevo Pathways", date: "10/2025" },
   { title: "Machine Learning Engineer", issuer: "NextGenLearners", date: "08/2025" },
   { title: "Data Science Intern", issuer: "Arch Technologies", date: "08/2025" },
@@ -107,8 +109,13 @@ export default function Education() {
                     <div style={{ flex: 1 }}>
                       <h4 style={{ color: 'var(--text-main)', fontSize: '1.15rem', marginBottom: '0.3rem' }}>{cert.title}</h4>
                       <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', opacity: 0.8 }}>{cert.issuer}</p>
+                      {cert.link && (
+                        <a href={cert.link} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--accent-purple)', fontSize: '0.85rem', fontFamily: 'var(--font-mono)', display: 'inline-flex', alignItems: 'center', gap: '0.3rem', marginTop: '0.4rem', textDecoration: 'none' }}>
+                          <ExternalLink size={12} /> Verify
+                        </a>
+                      )}
                     </div>
-                    <div style={{ textAlign: 'right' }}>
+                    {cert.date && <div style={{ textAlign: 'right' }}>
                       <span style={{ 
                         color: 'var(--accent-cyan)', 
                         fontFamily: 'var(--font-mono)', 
@@ -123,7 +130,7 @@ export default function Education() {
                       }}>
                         <Calendar size={12} /> {cert.date}
                       </span>
-                    </div>
+                    </div>}
                   </motion.div>
                 ))}
               </div>

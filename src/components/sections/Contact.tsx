@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle2, Building2 } from 'lucide-react';
 
 export default function Contact() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
@@ -83,6 +83,7 @@ export default function Contact() {
             <motion.div variants={containerVariants} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               {[
                 { icon: Mail, label: "Email", value: "muhammadshazebb@gmail.com", color: "var(--accent-cyan)", href: "mailto:muhammadshazebb@gmail.com" },
+                { icon: Building2, label: "Company Email", value: "mshahzaib@cogear.co.uk", color: "var(--accent-cyan)", href: "mailto:mshahzaib@cogear.co.uk" },
                 { icon: Phone, label: "Phone", value: "(+92) 3335523734", color: "var(--accent-purple)", href: "tel:+923335523734" },
                 { icon: MapPin, label: "Location", value: "Rawalpindi, Pakistan", color: "var(--accent-magenta)", href: "#" }
               ].map((item, idx) => (

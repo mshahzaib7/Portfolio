@@ -1,11 +1,30 @@
 import { motion } from 'framer-motion';
+import { ExternalLink, Code2 } from 'lucide-react';
 
-const projects = [
+type Project = {
+  title: string;
+  description: string;
+  tags: string[];
+  image: string;
+  link?: string;
+  github?: string;
+};
+
+const projects: Project[] = [
   {
     title: "InjectionShield Multilingual Prompt Injection Detection",
     description: "Independent AI security research showing prompt injection detectors fail on Urdu, Roman Urdu, and code-mixed text. Benchmarked 2,000+ prompts across four languages, and built InjectionShield-Lite, an in-browser detector that lifted Roman Urdu attack detection from 34% to 85% at a 1% false alarm rate.",
     tags: ["AI Security", "LLM Safety", "NLP", "Multilingual", "Research"],
-    image: `${import.meta.env.BASE_URL}injectionshield.png`
+    image: `${import.meta.env.BASE_URL}injectionshield.png`,
+    link: "https://injectionshield.vercel.app/",
+    github: "https://github.com/mshahzaib7/injectionshield"
+  },
+  {
+    title: "Verified Human Online Identity Verification",
+    description: "Designed, built and launched a platform that confirms a user is a real person through a short video call, then issues a public badge backed by an open registry, helping online shops and freelancers earn buyer trust with privacy and transparency built in.",
+    tags: ["Trust & Safety", "Identity Verification", "Full Stack", "Privacy"],
+    image: `${import.meta.env.BASE_URL}verified-human.png`,
+    link: "https://verifyhumanoriginal.vercel.app/"
   },
   {
     title: "Hand Gesture Rehabilitation System",
@@ -23,7 +42,8 @@ const projects = [
     title: "ClearSlot NHS AI Appointment Platform",
     description: "AI powered NHS outpatient intelligence platform that predicts DNA (Did Not Attend) risk using XGBoost ML, automates smart backfill with reserve list management, and delivered a 30% DNA reduction saving £27.5M annually per Trust.",
     tags: ["Machine Learning", "XGBoost", "FHIR API", "NHS", "HealthTech"],
-    image: `${import.meta.env.BASE_URL}NHS.png`
+    image: `${import.meta.env.BASE_URL}NHS.png`,
+    link: "https://clearslot-nhs-live.vercel.app/"
   },
   {
     title: "Rippled Reef Operating System",
@@ -149,6 +169,22 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
+
+                  {/* Project Links */}
+                  {(project.link || project.github) && (
+                    <div style={{ display: 'flex', gap: '1.2rem', marginTop: '1.2rem' }}>
+                      {project.link && (
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                          <ExternalLink size={14} /> Live Site
+                        </a>
+                      )}
+                      {project.github && (
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+                          <Code2 size={14} /> Source
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
@@ -162,6 +198,19 @@ export default function Projects() {
         }
         .glass-card:hover .image-overlay {
           background: rgba(18, 20, 23, 0.1) !important;
+        }
+        .project-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-size: 0.85rem;
+          font-family: var(--font-mono);
+          color: var(--accent-purple);
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        .project-link:hover {
+          color: var(--accent-cyan);
         }
       `}</style>
     </section>

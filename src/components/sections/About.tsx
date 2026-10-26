@@ -62,6 +62,13 @@ export default function About() {
                 I am a Computer Science graduate specialized in Artificial Intelligence, exploring machine learning and NLP. I have developed projects in text analysis and intelligent systems. I aspire to create innovative AI solutions that inspire and transform the future.
               </p>
 
+              <div style={{ marginBottom: '2rem', paddingLeft: '1.2rem', borderLeft: '3px solid var(--accent-cyan)' }}>
+                <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '0.5rem', fontFamily: 'var(--font-mono)' }}>Research Interests</h4>
+                <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+                  Applied machine learning for healthcare, computer vision for rehabilitation and human motion, natural language processing for real world text, and building AI systems that people actually use.
+                </p>
+              </div>
+
 
               
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
@@ -76,6 +83,16 @@ export default function About() {
                 <div>
                   <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '0.5rem', fontFamily: 'var(--font-mono)' }}>Phone</h4>
                   <p style={{ color: 'var(--text-muted)' }}>(+92) 3335523734</p>
+                </div>
+                <div>
+                  <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '0.5rem', fontFamily: 'var(--font-mono)' }}>Company</h4>
+                  <p style={{ color: 'var(--text-muted)' }}>
+                    <a href="https://cogear.co.uk" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit' }}>COGEAR (cogear.co.uk)</a>
+                  </p>
+                </div>
+                <div>
+                  <h4 style={{ color: 'var(--accent-cyan)', marginBottom: '0.5rem', fontFamily: 'var(--font-mono)' }}>Languages</h4>
+                  <p style={{ color: 'var(--text-muted)' }}>Urdu (Native), English (Fluent), German (A1)</p>
                 </div>
               </div>
 

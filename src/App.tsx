@@ -7,6 +7,7 @@ import Experience from './components/sections/Experience';
 import Skills from './components/sections/Skills';
 import Projects from './components/sections/Projects';
 import Education from './components/sections/Education';
+import Teaching from './components/sections/Teaching';
 import Contact from './components/sections/Contact';
 import NeuralBackground from './components/3d/NeuralBackground';
 
@@ -28,6 +29,7 @@ function App() {
         <Skills />
         <Projects />
         <Education />
+        <Teaching />
         <Contact />
       </main>
     </>

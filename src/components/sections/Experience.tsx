@@ -3,6 +3,18 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const experiences = [
   {
+    role: "Founder",
+    company: "COGEAR",
+    location: "Manchester, United Kingdom",
+    date: "07/2026 – Current",
+    points: [
+      "Founded and run an AI and software development studio building custom Machine Learning models, AI agents, LLM and RAG applications, computer vision tools, and full stack web and mobile apps.",
+      "Serve clients in healthcare, fintech, education, media and SaaS, owning each project from requirements to deployment.",
+      "Delivered a fine tuned LLM support agent connected to a client's knowledge base that resolves about 85% of queries without human help.",
+      "Other studio projects include Dermascan AI and MailPilot AI."
+    ]
+  },
+  {
     role: "AI Strategy and Automation Associate",
     company: "Zas Financials Ltd",
     location: "United Kingdom",

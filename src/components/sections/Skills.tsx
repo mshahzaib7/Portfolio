@@ -11,7 +11,7 @@ const skills = [
   },
   {
     category: "Advanced ML & Deep Learning",
-    items: ["PyTorch", "TensorFlow", "Keras", "Transformers", "Scikit-learn"]
+    items: ["PyTorch", "TensorFlow", "Keras", "Transformers", "Scikit-learn", "XGBoost", "Hugging Face"]
   },
   {
     category: "AI Infrastructure & Cloud",
