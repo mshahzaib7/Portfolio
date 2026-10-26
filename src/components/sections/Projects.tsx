@@ -2,6 +2,12 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: "InjectionShield Multilingual Prompt Injection Detection",
+    description: "Independent AI security research showing prompt injection detectors fail on Urdu, Roman Urdu, and code-mixed text. Benchmarked 2,000+ prompts across four languages, and built InjectionShield-Lite, an in-browser detector that lifted Roman Urdu attack detection from 34% to 85% at a 1% false alarm rate.",
+    tags: ["AI Security", "LLM Safety", "NLP", "Multilingual", "Research"],
+    image: `${import.meta.env.BASE_URL}injectionshield.png`
+  },
+  {
     title: "Hand Gesture Rehabilitation System",
     description: "Tracks hand gestures in real time with precision to support physical therapy through interactive exercises. Detects grasp, pinch, stretch, and swipe gestures with adaptive levels.",
     tags: ["Computer Vision", "Real-time Tracking", "Interactive"],
